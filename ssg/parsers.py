@@ -1,8 +1,7 @@
 import shutil
-import sys
 
 from typing import List
-from pathlib import Path;
+from pathlib import Path
 
 
 class Parser:
@@ -20,7 +19,6 @@ class Parser:
 
     def write(self, path, dest, content, ext=".html"):
         full_path = dest / path.with_suffix(ext).name
-
         with open(full_path, "w") as file:
             file.write(content)
 
